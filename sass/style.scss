@@ -1,0 +1,638 @@
+
+$button-color:#1ac6ff;
+$border-color:#f0f0f0;
+
+
+
+//ikonsPart we use like @extend;
+
+	.ikonsPart{
+		padding-bottom:40px;
+		text-align:center;
+		padding-top:30px;
+		i{
+			height: 81px;
+			width: 81px;
+			color:#1ac6ff;
+		}
+		span{
+				text-transform: uppercase;
+			    font-weight: 400;
+               
+		}
+		.thin{
+		 font-weight: 300;
+		}
+		p{
+		   line-height: 25px;
+           
+		}
+	}
+
+body{
+	background-image: url("../img/1.jpg");
+	padding-right:0px;
+
+	margin:0;
+	
+	background-repeat:repeat;
+	
+	
+}
+
+//dropdown buttons 
+.list-inline>li>ul{
+	text-align:left;
+	  display:none; 
+	 
+	top:100%;
+	left:0;
+
+}
+
+//start first part
+
+#headerSect{
+	
+	width:100%;
+	padding:10px 0 70px 0;
+
+	background-size:cover;
+	background-repeat: no-repeat;
+	
+	background-position: top center;
+	min-height: 732px;
+    
+    padding-bottom: 0px;
+
+	
+	a{
+		padding: 10px 2px;
+		font-size: 14px;
+		color: rgba(240, 240, 240, 0.8);
+		text-decoration: none;
+		text-transform: uppercase;
+		line-height: 1;
+	    font-family: "Lato";
+
+	}
+}
+
+
+
+.sameprop{
+	text-align: center;
+	color:#fff;
+	margin: 20px 0 15px;
+	font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.donotwait{
+	padding-top:100px;
+	
+		
+		h1{
+			@extend.sameprop;
+			font-weight: 300px;//do not work
+			line-height: 1.1;
+			font-size: 58px;
+
+			/* margin: 20px 0 15px; */
+		}
+		 h5{
+		 	@extend.sameprop;
+			margin-bottom: 33px;
+			font-weight:100px;
+			font-size: 24px;
+			
+		}
+p{
+	text-align:center; 
+
+}
+
+		.solid{
+			
+			padding:16px 25px!important;
+			/* padding-right:50px;
+			padding-left:50px; */
+			background-color:#1ac6ff;
+			color:#fff;
+			border-radius:2px;
+			i{
+				margin-right:10px;
+			}
+			
+
+		} 
+		.outline{
+			color:#fff;
+			border:1px solid #fff;
+			padding:15px 25px;
+			border-radius:2px;
+
+		}
+	
+}
+
+//end of the first part (background image);
+
+//start logo part
+#logo{
+	background-color:#f0f0f0;
+
+.logoimg{
+	padding-top:30px;
+
+	.image{
+		margin-left: 50px;
+		opacity:1;
+	}
+	
+}
+
+}
+
+
+// start third part with button which change container
+
+#butImgChange{
+	border-bottom:1px solid $border-color;
+	background-color:#fff;
+
+
+	/* ul{
+		margin-bottom: 50px;
+
+		    padding-top:45px;
+		    font-size: 13px;
+		       font-weight: 400;
+		       margin-left: 25%;
+		       li{
+		       	margin-right:-15px;
+		       }
+	}
+	 */
+	 .col-md-12{
+	 	padding-top:45px;
+		font-size: 13px;
+		font-weight: 400;
+		     
+
+	 	text-align: center;
+	 }
+	a{
+		
+		border:1px solid #f0f0f0;
+		font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
+   		text-transform: uppercase;
+   	    padding: 20px 60px;
+   	    text-decoration: none;
+
+	}
+	a:hover{
+		color:#fff;
+		background-color:$button-color;
+	}
+
+	.imageText{
+	   height: 463px;
+
+	   img{
+	   	width:555px;
+	   	height: 426px;
+	   }
+	   h3 .text-center{
+	   	text-transform: uppercase;
+	   	font-size: 18px;
+	   	font-weight: 500px;
+	   	text-align: center;
+	   
+	   }
+	   	span{
+	   		color:$button-color;
+	   	}
+	   	p{	
+	   		padding-bottom:24px;
+			text-align: center;
+	   		font-family: "PT Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	   	}
+	   	.sub-title{
+			text-align:center;
+			margin:0 25px 5px 25px;
+			padding-left:50px;
+			padding-right:50px;
+			font-weight: 400px;
+			font-family: "PT Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	   	}
+
+	}
+	//click second button
+	
+
+	.imageText1{
+		@extend.imageText;
+	}
+
+	//click third button
+	//ikonsPart we use like @extend;
+
+	.ikonsPart{
+		padding-bottom:40px;
+		text-align:center;
+		padding-top:30px;
+		i{
+			height: 81px;
+			width: 81px;
+			color:#1ac6ff;
+		}
+		span{
+				text-transform: uppercase;
+			    font-weight: 400;
+               
+		}
+		.thin{
+		 font-weight: 300;
+		}
+		p{
+		   line-height: 25px;
+           
+		}
+	}
+	
+//third button click;
+	.imageText2{
+		h2{
+		padding-top:30px;
+		text-transform: uppercase;
+	   	font-size: 30px;
+	   	font-weight: 300px;
+	   	text-align: center;
+	   	display: block;
+        font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
+        line-height: 1.1;
+		
+		}
+		p{
+			
+			margin-top:20px;
+			padding-bottom:24px;
+			text-align: center;
+	   		font-family: "PT Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+		}
+
+		
+
+	}
+	//for all columns
+	.col-md-4{
+	@extend.ikonsPart;
+	}
+
+}
+
+
+//we start age technology
+
+#newAgeTechnology{
+	background-color:#fff;
+	.technology{
+		border-bottom:1px solid $border-color;
+		&:first-child{
+			padding-top:50px;
+		}
+	}
+
+}
+
+
+
+//part with left wertical button and right big image
+#loremDolor{
+	background-color:$border-color;
+	padding-top:15px;
+
+	img{
+		position: relative;
+		top: 50px;
+
+	}
+	.col-md-4{
+		margin-top:2%;
+
+		.card{
+			padding: 15px 0px 15px 35px;
+		
+			
+			h4{
+				color:$button-color;
+			}
+			p{
+				line-height: 1.9;
+				color:#333;
+	   			font-family: "PT Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+			}
+			&:hover{
+				background-color:$button-color;
+				border-radius:5px;
+				h4 , p{
+					color:#fff;
+				}
+			}
+		}
+	}
+
+}
+
+
+
+//we strat part with id topIkons;
+
+#topIkons{
+	background-color:#fff;
+	padding-top:50px;
+	.col-md-3{
+		@extend.ikonsPart;
+		i{
+			display:inline;
+  		    cursor: pointer;
+			&:hover{
+				opacity: 0.5;
+			}
+		}
+		span{
+			font-weight:bold;
+
+		}
+		p{
+			color:darken($border-color,40%);
+		}
+	}
+}
+
+#liveUpdates{
+	text-transform:uppercase;
+	.col-md-5{
+		color:#fff; 
+		h2{
+			margin-bottom:0px;
+			font-weight:10px;
+		}
+}
+.col-md-7{
+			text-align: center;
+			padding:25px 10px;
+			a{
+				background-color:transparent!important;
+				color:#fff;
+				text-transform:uppercase;
+				&:hover{
+					background-color:#eee;
+					color:$button-color;
+				}
+
+			}
+		}
+}
+
+#packages{
+	background-color:#fff;
+	padding-top:30px;
+	h2{
+		padding-top:30px;
+		text-transform: uppercase;
+	   	font-size: 30px;
+	   	font-weight: 300px;
+	   	display: block;
+        font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
+        line-height: 1.1;
+        span{
+        	color:$button-color;
+        }
+		
+		}
+			p{
+			
+			margin-top:20px;
+			padding-bottom:24px;
+	   		font-family: "PT Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+		}
+
+		.col-md-4{
+			padding:0px;
+			background-color:$border-color;
+			
+			.title{
+				text-transform:uppercase;
+				font-weight:300px;
+				font-size: 24px;
+				background-color:$border-color;
+				 font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
+        line-height: 1.1;
+
+			}
+			.packege-prise{
+				background-color:darken($border-color,5%);
+			}
+			.prise{
+				font-weight:300px;
+				font-size:89px;
+				color:$button-color;
+				padding-bottom:0px;
+			}
+			p{
+				
+				padding-top:0px;
+	 		    font-size: 15px;
+   				text-transform: uppercase;
+                line-height: 1;
+    
+				}
+
+				.packege-detail{
+					ul li{
+						margin-top:20px;
+						border-top:1px solid gray;
+					}
+				}
+		}
+}
+
+
+#ourAwards{
+	@extend#packages;
+	p{
+		padding-top:0px;
+		margin-top: 0px;
+	}
+	.logo{
+		.logoimg{
+	padding-top:30px;
+
+	.image{
+		margin-left: 50px;
+		opacity:1;
+	}
+	
+}
+	}
+}
+
+#whatClientSay{
+	padding-bottom:20px;
+	.title{
+		h2{
+			color:#eee;
+			padding-top:30px;
+		text-transform: uppercase;
+	   	font-size: 30px;
+	   	font-weight: 300px;
+	   	font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
+        line-height: 1.1;
+			span{
+				color:$button-color;
+			}
+		}
+		p{
+			padding: 10px 50px;
+			color:#eee;
+			margin-top:20px;
+			padding-bottom:24px;
+	   		font-family: "PT Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+		}
+	}
+
+}
+
+
+#clientName{
+	
+	background-color:#fff;
+	font-size: 15px;
+    font-family: "PT Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color:darken($border-color,90%);
+    .nameOfClients{
+    
+    	padding:30px 50px;
+    	
+    }
+	 /* img{
+		opacity: 0.5;
+		border-radius:50%;
+	 &:hover{
+	 	opacity: 1;
+	 } 
+	} */
+
+	.media{
+
+		padding-bottom:20px;
+		opacity: 0.5;
+		img{
+		
+		border-radius:50%;
+	}
+	
+	&:hover{
+	     
+		opacity: 0.9;
+		h4,span{
+			color:$button-color;	
+		}
+		border-bottom:1px solid $button-color;
+	 	
+	 }
+
+	}
+
+	.behindTheScenes{
+		h2{
+			color:#333;
+			
+		text-transform: uppercase;
+	   	font-size: 40px;
+	   	font-weight: 300px;
+	   	font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
+        line-height: 1.1;
+			span{
+				color:$button-color;
+			}
+		}
+		p{
+			
+			color:#333;
+			padding-bottom:24px;
+	   		font-family: "PT Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+		}
+	}
+
+.imagePeople{
+	padding-top:25px;
+	h5{
+		color:$button-color;
+	}
+	p{
+		color:#333;
+	}
+}
+}
+
+#contact{
+	padding:20px 0;
+	background-color:$button-color;
+	color:#fff;
+	font-family: "PT Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	i{   
+		margin-top: 10px;
+		float: right;
+	}
+
+	.col-md-3{
+		padding-top:20px;
+
+	button{
+		background-color:$button-color;
+		padding:10px 50px;
+		&:hover{
+			background-color:#fff;
+			color:$button-color;
+			border:1px solid #fff;
+		}
+	}
+}
+h2{
+			
+		text-transform: uppercase;
+	   	font-size: 40px;
+	   	font-weight: 300px;
+        line-height: 1.1;
+		}	
+}
+
+
+#footer{
+	padding:60px 0;
+	color:#eee;
+	.col-md-4{
+		p{
+			padding-top:15px;
+
+		}
+
+	}
+	strong{
+		text-weight:bold;
+	}
+
+
+	li{
+		padding:10px 20px;
+		color:$button-color;
+	}
+	 .col-md-3{
+	 	span{
+	 		margin-left:20px;
+	 		display: inline-block;
+	 	}
+	 }	
+}
