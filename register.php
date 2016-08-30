@@ -41,7 +41,7 @@
 							<input type="password" class="form-control" name="password" placeholder="Password">
 						</div>
 						<button type="submit" class="btn" name="submit">GET STARTED</button>
-						<a href="index.html" class="btn btn-info pull-right" name="submit">Back</a>
+						<a href="index.php" class="btn btn-info pull-right" name="submit">Back</a>
 					</form>
 					<?php
 					
@@ -61,7 +61,7 @@
 								if(!$query2){
 										$sql = "INSERT INTO peoplename(nikname, email, password) VALUES ('$nikname', '$email', '$pas')";
 								$query = mysqli_query($conn, $sql);
-								header("Location:index.html");
+								header("Location:index.php");
 										}else{
 											?>
 												<div class="alert alert-danger" role="alert"><a href="login.php"><?php echo "Artiq qeydiyyatdan kecmisiniz!!!" ?></a></div>

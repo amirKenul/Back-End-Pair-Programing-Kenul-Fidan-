@@ -21,9 +21,9 @@
   </style>
 </head>
 <body>
-<nav class="navbar navbar-default transparency" style="background:transparent!important; border:none;" >
+<!-- <nav class="navbar navbar-default transparency" style="background:transparent!important; border:none;" >
   <div class="container-fluid transparency" style="background-color:transparent">
-    <!-- Brand and toggle get grouped for better mobile display -->
+    Brand and toggle get grouped for better mobile display
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
@@ -34,7 +34,7 @@
       <a class="navbar-brand" href="#"><img style="width:130px; height: 30px;" src="img/logo.png"></a>
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
+    Collect the nav links, forms, and other content for toggling
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><a href="">Home</a></li>
@@ -63,9 +63,9 @@
         <li><a href="#">Link</a></li>
        <li style="border:1px solid #1ac6ff; border-radius:5%;"> <a href="login.php" style="color:#1ac6ff"> Sing Up</a></li>
       </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+    </div>/.navbar-collapse
+  </div>/.container-fluid
+</nav> -->
 
   <div class="container-fluid" id="headerSect">
     <div class="container">
@@ -101,7 +101,7 @@
                   <li>shortcodes</li>
                 </ul>
               </li>
-              <li style="margin-left:120px;"><a href=""> Login</a></li>
+              <li style="margin-left:120px;"><a href="register.php"> Login</a></li>
               <li style="border:1px solid #1ac6ff; border-radius:5%;padding:10px"> <a href="login.php" style="color:#1ac6ff"> Sing Up</a></li>
             </ul>
             <!-- <ul class="nav navbar-nav navbar-right">
@@ -242,6 +242,7 @@
 <!--we start age technology-->
 <div class="container-fluid " id="newAgeTechnology">
   <div class="container">
+
     <div class="row technology">
       <div class="col-md-6" style="">
       <h3>NEW AGE <span>TECHNOLOGY<span></h3>
@@ -253,19 +254,65 @@ sdfs sit atmet sit dolor greand fdanrh sdfs </p>
       <img src="img/tile-wide.png" class="img-responsive"/>
       </div>
     </div>
-    <div class="row helmet">
-    <div class="col-md-6">
-    <img src="img/helmet.jpg" class="img-responsive" />
-    </div>
-    <div class="col-md-6">
-    <h3 class="text-right">NEW AGEHANG <span>ON TO</span> YER HELMET</h3>
-    <p class="subtitle text-right">Lorem ipsum dolor sit atmet sit dolor greand fdanrh<br>
-sdfs sit atmet sit dolor greand fdanrh sdfs </p>
-     <p class="text-right"> In his igitur partibus duabus nihil erat, quod Zeno commuta rest gestiret. Sed virtutem ipsam inchoavit, nihil ampliusuma. Scien tiam pollicentur, quam non erat mirum sapientiae lorem cupido patria esse cariorem. Quae qui non vident, nihilamane umquam magnum ac cognitione.</p>
 
+
+
+    <div class="row helmet">
+ 
+    <?php
+    include "confiq.php";
+      $sql="SELECT htext, psmal, pbig FROM textimg";
+      $query=mysqli_query($conn, $sql);
+      while($row = mysqli_fetch_assoc($query)){
+        ?>
+         <div class='row technology'>
+          <div class='col-md-6'>
+        <?php 
+foreach ($row as $value) {
+  ?>
+       
+         
+           <div class="row technology">
+      <div class="col-md-6" style="">
+      <h3><?= $row["htext"]?></h3>
+      <p class="subtitle">Lorem ipsum dolor sit atmet sit dolor greand fdanrh<br>
+sdfs sit atmet sit dolor greand fdanrh sdfs </p>
+      <p> In his igitur partibus duabus nihil erat, quod Zeno commuta rest gestiret. Sed virtutem ipsam inchoavit, nihil ampliusuma. Scien tiam pollicentur, quam non erat mirum sapientiae lorem cupido patria esse cariorem. Quae qui non vident, nihilamane umquam magnum ac cognitione.</p>
+      </div>
+      <div class="col-md-6">
+      <img src="img/tile-wide.png" class="img-responsive"/>
+      </div>
     </div>
-    </div>
+        <?php  
+      }
+?>
   </div>
+   <div class='col-md-6'>
+
+
+        <?php 
+foreach ($row as $value) {
+  ?>
+ <?php
+
+       echo "<img src='img/".$row['imgname']."' alt='...''>";
+
+
+      }
+?>
+  </div>
+ </div>
+<?php
+    }
+    ?>
+
+   
+    <div class="col-md-6">
+    <!-- <img src="img/helmet.jpg" class="img-responsive" /> -->
+    
+    </div>
+    
+
 </div>
 <!--we start the part with wertical menu and picture in the right-->
 <div class="container-fluid" id="loremDolor">
@@ -649,5 +696,4 @@ LAUNCH YOUR STARTUP NOW!</h2>
 <script src="js/main.js"></script>
 </body>
 </html>
-<script>
-</script>
+

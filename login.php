@@ -39,7 +39,7 @@
 						</div>
 						<button type="submit" class="btn" name="submit">LOGIN</button>
 						<a href="register.php" class="btn btn-success pull-right" name="submit">REGISTRATION</a>
-						<a href="index.html" class="btn btn-info" name="submit">Back</a>
+						<a href="index.php" class="btn btn-info" name="submit">Back</a>
 						<?php
 						/*if(isset($_POST['submit'])){
 							if(!empty($_POST['email']) && !empty($_POST['password'])){
@@ -60,13 +60,13 @@
 <?php
 if(isset($_POST['submit'])){
 						if(!empty($_POST['email']) && !empty($_POST['password'])){
-
-						
 							$email = $_POST['email'];
 							$pas = $_POST['password'];
 							include "confiq.php";
 
-
+						if ($email=='admin@gmail.com' && $pas=='12345') {
+							header("Location:admin.php");
+						}else{
 
 							$sql2="SELECT * FROM peoplename WHERE email='$email' and password='$pas'";
 							$query2 = mysqli_query($conn, $sql2);
@@ -78,14 +78,17 @@ if(isset($_POST['submit'])){
 
 								if($row['email'] && $row['password']){
 										
-								echo "Salam admin";
+								echo "Salam, eziz istifadecimiz!";
 										}else{
 											?>
 												<div class="alert alert-danger" role="alert"><?php echo "Parol Duzgun deyil!!!" ?></div>
 										<?php
-										}		
+										}	
+						}
+						
 	
-					}else{
+					}
+					else{
 						?>
 
 						<div class="alert alert-danger" role="alert"><?php echo"Bosh qoymayin!!!" ?></div>
